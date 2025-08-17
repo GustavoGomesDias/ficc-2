@@ -1,0 +1,111 @@
+.about-coffee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: radial-gradient(circle at top center, #a3652c 0%, transparent 70%),
+              linear-gradient(to bottom, #6a3417 0%, #2e1a10 100%);
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.about-coffee h2 {
+    color: #FEC271;
+    font-family: NexaHeavy, sans-serif;
+    font-size: 1.5rem;
+}
+
+.second-title {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.about-card-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card {
+    padding: 2rem 2rem 0 2rem;
+    background-color: rgba(24, 13, 8, 0.3);
+    border-radius: 15px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    width: 250px;
+}
+
+.card-text {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.card-font {
+    color: #a7692f;
+    text-align: center;
+}
+
+.region {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: radial-gradient(circle at top center, #a3652c 0%, transparent 70%),
+              linear-gradient(to bottom, #6a3417 0%, #2e1a10 100%);
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.region h2 {
+    color: #FEC271;
+    font-family: NexaHeavy, sans-serif;
+    font-size: 1.5rem;
+}
+
+.region-text {
+    color: #fff;
+    text-align: center;
+
+}
+
+.about-sec {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 180px;
+    border-top-right-radius: 80px; /* canto arredondado como na imagem */
+    background: linear-gradient(to bottom, #57391e 0%, #5c3621 50%, #824c2d 100%);
+    color: #fff;
+    gap: 1rem;
+}
+
+.sponsors {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sponsors-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sponsor-logo {
+    width: 100px;
+    height: auto;
+}

@@ -1,0 +1,104 @@
+.ficc {
+    /* background-image: url(../assets/images/abstrato-design-de-layout-de-fundo-de-parede-marrom-suave-estudio-sala-modelo-da-web-relatorio-de-negocios-com-cor-gradiente-de-circulo-suave.jpg) no-repeat center/cover;
+    filter: invert(100%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: radial-gradient(circle at top center, #a3652c 0%, transparent 70%),
+              linear-gradient(to bottom, #6a3417 0%, #2e1a10 100%);
+    /* padding: 1rem 0; */
+}
+
+.ficc-logo-explanation {
+    width: 200px;
+    height: 120px;
+}
+
+.ficc-explanation {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    padding: .5rem 0;
+}
+
+.highlight {
+    font-family: NexaBlack, sans-serif;
+}
+
+.ficc-explanation-section {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80px;
+    border-top-right-radius: 80px; /* canto arredondado como na imagem */
+    background: linear-gradient(to bottom, #57391e 0%, #5c3621 50%, #824c2d 100%);
+    color: #e79657;
+}
+
+.ficc-text-explanation {
+    padding: 1rem;
+}
+
+.ficc-p2 {
+    background: radial-gradient(circle at bottom center, #c77b42 0%, transparent 70%),
+            linear-gradient(to top, #8a4525 0%, #4a2a1a 100%),
+            linear-gradient(to right, rgba(255, 220, 180, 0.3), transparent 60%);
+
+    padding: 0 .5rem;
+}
+
+.ficc-p2 h2 {
+    width: 100%;
+    text-align: center;
+    color: #e79657;
+    padding: 1rem 0;
+}
+
+.ficc-p2-container {
+    display: flex;
+    justify-content: center;
+}
+
+.guest-citation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+    padding: .5rem;
+    color: #fff;
+    width: 100%;
+}
+
+.guest-image {
+    width: 120px;
+    height: auto;
+}
+
+.quote {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-weight: 700; /* negrito para ficar parecido */
+  font-size: 30px;  /* ajuste conforme precisar */
+}
+
+.a {
+    color: #ffe2b8;
+    display: block;
+    text-align: right;
+    margin-top: .5rem;
+}
+
+.b {
+    color: #a45b26;
+}
+
+.interactive-btn-sec-2 {
+    padding: 1rem;
+}
