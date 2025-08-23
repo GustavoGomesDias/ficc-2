@@ -78,7 +78,7 @@
 }
 
 .about-sec {
-    padding: 1.5rem;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +92,7 @@
 }
 
 .sponsors {
-    padding: 1rem;
+    background: linear-gradient(to bottom, #57391e 0%, #5c3621 50%, #824c2d 100%);
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -106,6 +106,38 @@
 }
 
 .sponsor-logo {
-    width: 100px;
+    width: 100%;
     height: auto;
+}
+
+@media (min-width: 992px) {
+    .about-coffee h2 {
+        font-size: 3rem;
+    }
+
+    .second-title {
+        font-size: 2rem;
+    }
+
+    .about-card-list {
+        flex-direction: row;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 300px;
+        height: 250px;
+        padding: 2rem;
+    }
+
+    .region h2 {
+        font-size: 3rem;
+
+    }
+
+    .about-sec .region-text {
+        width: 60%;
+        font-size: 1.5rem;
+    }
 }

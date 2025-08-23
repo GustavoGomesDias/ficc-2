@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem;
+    padding: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,4 +61,34 @@
 
 .set-size {
     height: 50px;
+}
+
+@media (min-width: 992px) {
+    .programming {
+        padding: 2rem;
+        height: 600px;
+    }
+
+    .programming-list {
+        font-size: 1.5rem;
+    }
+  .programming h2 {
+    font-size: 6rem;
+  }
+
+  .maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-form {
+    width: 50%;
+  }
 }

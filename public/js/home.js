@@ -21,3 +21,12 @@ responsiveNavBtn.addEventListener('click', () => {
         });
     }
 });
+
+window.onscroll = function() {
+    const wppBtn = document.querySelector('.wpp-btn');
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    wppBtn.style.display = "block";
+  } else {
+    wppBtn.style.display = "none";
+  }
+};

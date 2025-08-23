@@ -1,6 +1,7 @@
 .ficc {
     /* background-image: url(../assets/images/abstrato-design-de-layout-de-fundo-de-parede-marrom-suave-estudio-sala-modelo-da-web-relatorio-de-negocios-com-cor-gradiente-de-circulo-suave.jpg) no-repeat center/cover;
     filter: invert(100%); */
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +35,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    /* width: 100%; */
     height: 80px;
     border-top-right-radius: 80px; /* canto arredondado como na imagem */
     background: linear-gradient(to bottom, #57391e 0%, #5c3621 50%, #824c2d 100%);
@@ -55,6 +56,7 @@
 
 .ficc-p2 h2 {
     width: 100%;
+    font-size: 1.2rem;
     text-align: center;
     color: #e79657;
     padding: 1rem 0;
@@ -63,6 +65,7 @@
 .ficc-p2-container {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
 }
 
 .guest-citation {
@@ -70,15 +73,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: .5rem;
+    gap: .3rem;
     padding: .5rem;
     color: #fff;
-    width: 100%;
+    width: 80%;
+    font-size: 12px;
 }
 
 .guest-image {
-    width: 120px;
-    height: auto;
+    width: 14rem;
+    height: 300px;
+    /* object-fit: cover; */
 }
 
 .quote {
@@ -101,4 +106,66 @@
 
 .interactive-btn-sec-2 {
     padding: 1rem;
+}
+
+
+@media (min-width: 992px) {
+  .ficc-logo-explanation {
+      width: 650px;
+      height: auto;
+  }
+
+  .ficc-explanation {
+    font-size: 2rem;
+  }
+
+  .ficc-explanation-section {
+      height: 250px;
+      border-top-right-radius: 150px; /* canto arredondado como na imagem */
+      font-size: 2.5rem;
+    }
+
+    .ficc-text-explanation {
+        width: 60%;
+        text-align: center;
+    }
+
+
+    .ficc-p2 h2 {
+        font-size: 3.2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .guest-citation {
+        padding: 2rem;
+        height: auto;
+        width: 50%;
+    }
+
+    .guest-citation .highlight {
+        font-size: 3.2rem;
+    }
+
+    .guest-citation span {
+        font-size: 1.5rem;
+    }
+
+    .quote {
+        font-size: 50px;  /* ajuste conforme precisar */
+        
+    }
+
+    .a {
+        display: inline;
+    }
+
+    .guest-image {
+        height: 800px;
+        width: auto;
+    }
+
+    .ficc-p2-container {
+        justify-content: flex-start !important;
+    }
 }
