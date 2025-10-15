@@ -126,7 +126,7 @@
     }
 
     .ficc-text-explanation {
-        width: 60%;
+        width: 70%;
         text-align: center;
     }
 
@@ -134,13 +134,17 @@
     .ficc-p2 h2 {
         font-size: 3.2rem;
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
 
     .guest-citation {
         padding: 2rem;
         height: auto;
         width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
     }
 
     .guest-citation .highlight {
@@ -149,6 +153,7 @@
 
     .guest-citation span {
         font-size: 1.5rem;
+        width: 100%;
     }
 
     .quote {

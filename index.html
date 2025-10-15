@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="public/css/about-coffee.css">
     <link rel="stylesheet" href="public/css/contact.css">
     <link rel="stylesheet" href="public/css/footer.css">
+    <link rel="stylesheet" href="public/css/overlay.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <title>Feira Internacional do Café Conilon</title>
@@ -101,10 +102,10 @@
             <div class="guest-citation">
                 <h2>EVENTO COM CURADORIA DE <span class="highlight">MARCUS MAGALHÃES</span></h2>
                 <span><span class="quote b">“</span>O café conilon está mudando e você faz parte dessa transformação.</span>
-                <span>O mundo exige mais do nosso setor: inovação, visão global e mais preparo para novos modelos de produção e financiamento</span>
-                <span>Foi assim que a FICC nasceu!</span>
-                <span>Buscando ser ponto de encontro, espaço de ideias e o empurrão que faltava para avançarmos juntos.</span>
-                <span>Um novo capítulo do café começa agora. E ele começa com você.<span class="quote a">”</span></span>
+                <span> O mundo exige mais do nosso setor: inovação, visão global e mais preparo para novos modelos de produção e financiamento.</span>
+                <span> Foi assim que a FICC nasceu!</span>
+                <span> Buscando ser ponto de encontro, espaço de ideias e o empurrão que faltava para avançarmos juntos.</span>
+                <span> Um novo capítulo do café começa agora. E ele começa com você.<span class="quote a">”</span></span>
             </div>
 
             <img src="public/assets/images/Marcus Magalhães - Marcus Salles (10).png" alt="Marcus Magalhães" class="guest-image" loading="lazy">
@@ -123,6 +124,7 @@
             <span>• Exposição de máquinas e equipamentos</span>
             <span>• Podcast ao vivo e interativo</span>
         </div>
+        <button class="botao-programacao z-index-2">Confira a programação</button>
     </div>
 
     <div class="about-coffee" id="about-coffee">
@@ -157,7 +159,7 @@
     </div>
 
     <div class="region">
-        <h2>O CAFÉ CONILON</h2>
+        <h2>A REGIÃO</h2>
         <span class="second-title">Região do Verde e das Águas</span>
 
         <div class="about-sec">
@@ -189,7 +191,7 @@
     </div>
 
     <div class="footer">
-        <img src="public/assets/images/ASSINATURAS.png" alt="Patrocinadores / Realização" class="sponsor-logo" loading="lazy">
+        <!-- <img src="public/assets/images/ASSINATURAS.png" alt="Patrocinadores / Realização" class="sponsor-logo" loading="lazy"> -->
         <img src="public/assets/images/ficc.png" alt="Logo - FICC Explanation" class="ficc-logo-explanation" loading="lazy">
         <h1 class="ficc-title"><span class="highlight-title">DO ESPÍRITO SANTO PARA O MUNDO:</span> VIVA O UNIVERSO DO CAFÉ CO</h1>
         <div class="event-date-container">
@@ -211,6 +213,60 @@
             <img src="public/assets/icons/whats.png" alt="Whatsapp Logo" class="whatsapp-icon" loading="lazy">
         </a>
     </div>
+
+    <div id="overlay" class="overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal" role="document" aria-labelledby="pdfTitle" id="pdfModal">
+            <div class="modal-header">
+            <div class="title">
+                <strong id="pdfTitle">FICC</strong>
+                <span id="pdfName">Programação</span>
+            </div>
+
+            <div class="toolbar" role="toolbar" aria-label="Ações do PDF">
+                <!-- <button class="tool-btn" id="downloadBtn" title="Baixar PDF">⬇️ Baixar</button>
+                <button class="tool-btn" id="printBtn" title="Imprimir PDF">🖨️ Imprimir</button>
+                <button class="tool-btn" id="openNewTab" title="Abrir em nova aba">↗︎ Abrir</button> -->
+                <button class="btn-close" id="closeBtn" aria-label="Fechar">✕</button>
+            </div>
+            </div>
+
+            <div class="pdf-container">
+            <!-- Troque 'sample.pdf' pelo seu arquivo -->
+            <iframe id="pdfFrame" class="pdf-frame" src="sample.pdf" type="application/pdf">
+                <div class="pdf-fallback">
+                Seu navegador não consegue exibir PDFs embutidos. <a id="fallbackLink" href="sample.pdf" style="color:var(--accent); margin-left:8px;">Clique aqui para baixar</a>
+                </div>
+            </iframe>
+            </div>
+        </div>
+    </div>
 </body>
+<script>
+   const botaoProgramacao = document.querySelector('.botao-programacao');
+  const overlay = document.querySelector('#overlay');
+  const closeBtn = document.querySelector('#closeBtn');
+
+  // Abrir modal
+  botaoProgramacao.addEventListener('click', () => {
+    overlay.classList.add('open');
+    overlay.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden'; // trava o scroll
+  });
+
+  // Fechar modal
+  closeBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', (ev) => {
+    if (ev.target === overlay) closeModal();
+  });
+  document.addEventListener('keydown', (ev) => {
+    if (ev.key === 'Escape') closeModal();
+  });
+
+  function closeModal(){
+    overlay.classList.remove('open');
+    overlay.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+  }
+</script>
 <script src="/public/js/home.js"></script>
 </html>
