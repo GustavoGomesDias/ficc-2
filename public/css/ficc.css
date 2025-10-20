@@ -97,7 +97,8 @@
     color: #ffe2b8;
     display: block;
     text-align: right;
-    margin-top: .5rem;
+    /* margin-top: .5rem; */
+    width: 40%;
 }
 
 .b {
